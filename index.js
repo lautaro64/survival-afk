@@ -4,6 +4,7 @@ const HOST = 'theo.hidencloud.com'
 const PORT = 24587
 
 const USERNAME = 'LautiMC'
+const PASSWORD = 'TU_CONTRASEÑA'
 
 function createBot() {
     console.log('[BOT] Conectando...')
@@ -19,9 +20,14 @@ function createBot() {
         console.log('[BOT] Conectado al proxy.')
 
         setTimeout(() => {
+            console.log('[BOT] Iniciando sesión...')
+            bot.chat(`/login ${PASSWORD}`)
+        }, 3000)
+
+        setTimeout(() => {
             console.log('[BOT] Entrando a Survival...')
             bot.chat('/server survival')
-        }, 3000)
+        }, 6000)
     })
 
     bot.on('messagestr', (message) => {

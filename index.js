@@ -4,7 +4,7 @@ const HOST = 'theo.hidencloud.com'
 const PORT = 24587
 
 const USERNAME = 'LautiMC'
-const PASSWORD = 'TU_CONTRASEÑA'
+const PASSWORD = '89z_1Cn[~j%7vxWM'
 
 function createBot() {
     console.log('[BOT] Conectando...')
